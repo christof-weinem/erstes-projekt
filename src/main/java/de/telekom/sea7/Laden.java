@@ -11,13 +11,14 @@ public class Laden {
 
 		Bier altbier = new Bier(); // Bier ( Preis)
 		Bier bockbier = new Bier();
+		Bier pils = new Bier();
+		Bier dunkel = new Bier();
 
 		String ort = "Hamburg"; // Laden liegt in
 
 		altbier.setPreis(75);
-
 		altbier.preisanpassen(2);
-
+		
 // Bier.getPreis() = 75;
 
 		System.out.println("Verkauf in " + ort);

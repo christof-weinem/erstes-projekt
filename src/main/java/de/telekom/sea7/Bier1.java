@@ -1,14 +1,14 @@
 package de.telekom.sea7;
 
-public class Bier { // Datentyp
+public class Bier1 { // Datentyp
 
-	private int preis = 200; // 400
-	private int netto = 186; // ?
-	private int steuer = 14; // ?
-	private int steuersatz = 7; // Steuersatz in %
+	private double preis = 2; // 400
+	private double netto = 1.86; // ?
+	private double steuer = 0.38; // ?
+	private double steuersatz = 19; // Steuersatz in %
 	private String name;
 
-	public void preisanpassen(int preisanpassung) {
+	public void preisanpassen(double preisanpassung) {
 		preis = preis * preisanpassung;
 		preisrechnen();
 	}
@@ -18,15 +18,19 @@ public class Bier { // Datentyp
 		steuer = preis - netto;
 	}
 
-	public int getPreis() {
+	public double getPreis() {
 		return preis;
 	}
 
-	public int getSteuer() {
+	public double getSteuer() {
 		return steuer;
 	}
+	
+	public double getNetto() {
+		return netto;
+	}
 
-	public void setPreis(int i) {
+	public void setPreis(double i) {
 		preis = i;
 		preisrechnen();
 	}
