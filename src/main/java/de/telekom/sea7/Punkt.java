@@ -3,6 +3,10 @@ package de.telekom.sea7;
 public class Punkt {
 	private int x = 0;
 	private int y = 0;
+	
+	public Punkt() {
+		
+	}
 
 	public int getY() {
 		return y;
