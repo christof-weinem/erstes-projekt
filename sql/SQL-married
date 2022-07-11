@@ -1,0 +1,15 @@
+--create table personen (id int primary key auto_increment, vorname varchar(20) not null default '',
+--name varchar(30) not null default '');
+--create table relationen (id int primary key auto_increment, personen_id int not null, personen_rel_
+--id int not null);
+--alter table relationen add constraint fk_relationen_personen foreign key (personen_id) references personen(id);
+--alter table relationen add constraint fk2_relationen_personen foreign key (personen_rel_id) references personen(id);
+--insert into personen (vorname, name) values ('Harry' , 'Mueller');
+--insert into personen (vorname, name) values ('Mary' , 'Mueller');
+--insert into personen (vorname, name) values ('Lila' , 'Schwarz');
+--insert into relationen (personen_id, personen_rel_id) values (1,2);
+--select * from personen p left join relationen r on r.id=p.id;
+--create unique  index ui2_rel on relationen (personen_rel_id);
+--create unique  index ui_rel on relationen (personen_id);
+--hilft hier nicht weiter:  create unique  index ui3_rel on relationen (personen_id, personen_rel_id);  bringt nichts weiter, da dies nur die
+-- kombi verhindert , z. B. AB und AB ,  AB und BA   würde aber gehen. 
